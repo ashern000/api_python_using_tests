@@ -25,7 +25,7 @@ def test_get_student_success():
     client = TestClient(app)
     r = client.get("/students/1")
     assert r.status_code == 200
-    assert r.json()["email"] == "aluno@example.com"
+    assert r.json()["email"] == "asher@gmail.com"
 
 
 def test_get_student_not_found():
